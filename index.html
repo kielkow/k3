@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Site K3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .navbar{
+      background-color: green;
+      border-color: green;
+      margin-bottom: 0;
+      border-radius: 0;
+      color: #FFF;
+      padding: 1% 0;
+      font-size: 1.2em;
+      border: 0;
+    }
+    .imagem-navbar{
+      height: 50px;
+      width: 50px;
+    }
+    .navbar-brand{
+      float: left;
+      min-height: 55px;
+      padding: 0 15px 5px;
+    }
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+      color: #FFF;
+      background-color: green;
+    }
+    .navbar-inverse .navbar-nav li a{
+      color: #d5d5d5;
+    }
+    .carousel-caption{
+      top: 50%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+    }
+    .btn{
+      font-size: 18px;
+      color: #FFF;
+      padding: 12px 22px;
+      background: green;
+      border: 2p solid #FFF;
+    }
+    .container{
+      margin: 4% auto;
+    }
+    #icon{
+      max-width: 200px;
+      margin: 1% auto;
+    }
+    footer{
+      width: 100%;
+      background-color: green;
+      padding: 5%;
+      color: #FFF;
+    }
+    #contatos{
+      font-size: 20px;
+      color: #FFF;
+    }
+
+
+    @media (max-width: 600px){
+      .carousel-caption{
+        display: none;
+      }
+      #icon{
+        max-width: 150px;
+      }
+      h2{
+        font-size: 1.7em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse"> 
+        <div class="container-fluid"> 
+          <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+              <span class="icon-bar"></span> 
+              <span class="icon-bar"></span> 
+              <span class="icon-bar"></span> 
+            </button> 
+            <a class="navbar-brand" href="#"><img class="imagem-navbar" src="imagens/logo_transparente2.png"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#quemsomos">Quem Somos</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="#contatos">Contato</a></li>
+            </ul>
+          </div> 
+        </div> 
+      </nav>
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="imagens/20160606_092524.jpg">
+            <div class="carousel-caption">
+              <h1>Centralize seus Descartes!</h1>
+            </div>
+          </div> <!--- End Active -->
+          <div class="item">
+            <img src="imagens/Estamparia.jpg" alt="">
+            <div class="carousel-caption">
+                <h1>Gestão Total de Residuos</h1>
+            </div>
+          </div>
+          <div class="item">
+              <img src="imagens/lixo_eletronico-1024x679 - Copy.jpg" alt="">
+              <div class="carousel-caption">
+                  <h1>UMA EMPRESA QUE VOCE PODE CONFIAR</h1>
+              </div>
+          </div>
+        </div>
+        <!--- Start Sliders Controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> <!--- End Slider -->
+
+      <div class="container" id="quemsomos">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Quem Somos</h4>
+            <p>A K3, fundada em 2001, é uma empresa prestadora de serviços ambientais especializada na Gestão de Resíduos Industriais, Recicláveis e Perigosos. Focando suas atividades na destinação final adequada e sempre na busca de novas tecnologias de destruição e reaproveitamento de resíduos. A empresa realiza a chamada “logística reversa” , que institui a Política Nacional de Resíduos Sólidos, como o conjunto de ações e procedimentos que viabilizam a coleta, armazenagem e retorno dos materiais aos ciclos produtivos, seja para reaproveitamento (reuso ou reciclagem), seja para descarte ambientalmente adequado.</p>
+            <p></p>
+          </div>
+          <div class="col-md-6">
+            <img src="imagens/gerenciamento de resíduso.gif" class="img-responsive" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <h4>Missão</h4>
+              <p>Desenvolver soluções para gestão de meio ambiente, atendendo as necessidades de nossos clientes, visando redução dos custos sem abrir mão da eficiência, em total conformidade com as legislações ambientais.</p>
+              <p></p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="imagens/Caçamba ecológica1.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>Visão</h4>
+                <p>Ser uma empresa de excelência em gestão do meio ambiente, com profissionais altamente especializados, ferramentas eficientes com soluções estratégicas de nível internacional. Acreditando que o melhor processo é aquele que atende as necessidades dos clientes nos requisitos ambientais com qualidade, prazo e custo. Participando de ações para um futuro sustentável de nosso planeta.</p>
+                <p></p>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <img src="imagens/plastico2 (2).jpg" class="img-responsive" alt="">
+              </div>
+          </div>
+        </div>
+
+
+      <footer class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Fale Conosco</h3>
+            <br>
+            <h4>Nosso endereço e informações de contato aqui.</h4>
+          </div>
+          <div class="col-sm-4" id="contatos">
+            <p>E-mail: comercial@k3.eco.br</p>
+            <p>Tel: (11) 5611-7116 / (19) 3935-2239</p>
+            <p>Cel: (11) 95857-2000</p>
+            <p>Sede Própria: Rua Jade, 621 - Dist. Industrial - Indaiatuba/SP</p>
+            <p>CEP: 13347-180</p>
+            <p>Escritório Empresarial: Rua Tapirapés, 87 - Balneário Mar Paulista - São Paulo/SP</p>
+            <p>CEP: 04463-040</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="imagens/mail-protecta.png" class="icon" alt="">
+          </div>
+        </div>
+      </footer>
+
+
+
+</body>
+</html>
